@@ -1,0 +1,4 @@
+name: ci
+description: "CI validation"
+
+runs: echo "Hello world!"
