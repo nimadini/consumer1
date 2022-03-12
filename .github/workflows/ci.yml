@@ -1,0 +1,14 @@
+name: ci
+
+on:
+  push
+
+  workflow_call:
+
+jobs:
+  greet:
+    name: Greet
+    runs-on: ubuntu-latest
+    steps:
+      - name: greetings
+        run: echo "Hello world!"
