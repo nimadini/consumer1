@@ -1,8 +1,19 @@
 name: ci
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      id:
+        description: 'Run ID.'
+        required: false
 
 jobs:
+  id:
+    name: Workflow ID Provider
+    runs-on: ubuntu-latest
+    steps:
+      - name: ${{github.event.inputs.id}}
+        run: echo run identifier ${{ inputs.id }}
   greet:
     name: Greet
     strategy:
