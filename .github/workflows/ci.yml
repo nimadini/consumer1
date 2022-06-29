@@ -6,6 +6,9 @@ on:
       id:
         description: 'Run ID.'
         required: false
+      os:
+        description: The os to run.
+        required: false
 
 jobs:
   id:
@@ -23,4 +26,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: greetings
-        run: false
+        run: true
