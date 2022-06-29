@@ -26,4 +26,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: greetings
-        run: true
+        run: false
