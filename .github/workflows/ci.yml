@@ -6,9 +6,6 @@ on:
       id:
         description: 'Run ID.'
         required: false
-      os:
-        description: The os to run.
-        required: false
 
 jobs:
   id:
